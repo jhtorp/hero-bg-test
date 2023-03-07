@@ -1,12 +1,13 @@
 <script>
 	import backgroundVideo from '$lib/assets/background-test.mp4';
+	import posterImg from '$lib/assets/bg-loop-still.png';
 	import ButtonSolid from '$lib/components/buttons/ButtonSolid.svelte';
 	import ButtonBorder from '$lib/components/buttons/ButtonBorder.svelte';
 </script>
 
 <div class="hero">
 	<div class="hero-text">
-		<h2>Stemming, service, Reparasjoner & renovering</h2>
+		<h2>Stemming, service, reparasjoner & renovering</h2>
 		<h1>INNLANDET PIANO</h1>
 		<p>
 			Utfører alt av stemming, service, reparasjoner og renoveringer på flygler og pianoer over hele
@@ -21,12 +22,16 @@
 			</a>
 		</div>
 	</div>
-	<video class="video-bg" autoplay muted loop>
+	<video class="video-bg" autoplay muted loop playsinline poster={posterImg}>
 		<source src={backgroundVideo} type="video/mp4" />
 	</video>
 </div>
 
 <style>
+	span {
+		text-decoration: underline;
+	}
+
 	.buttons {
 		display: flex;
 		gap: 40px;
