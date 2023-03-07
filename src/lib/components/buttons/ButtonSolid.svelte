@@ -1,0 +1,24 @@
+<script>
+	export let text;
+	export let width = '250px';
+	export let height = '60px';
+</script>
+
+<button style="width: {width}; height: {height};">{text}</button>
+
+<style>
+	button {
+		font-size: 20px;
+		border: none;
+		background: #fff5f6;
+		color: #191a1c;
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	button:hover {
+		background: none;
+		border: 2px solid #fff5f6;
+		color: #fff5f6;
+	}
+</style>
