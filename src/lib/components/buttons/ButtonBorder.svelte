@@ -14,6 +14,7 @@
 		color: #fff5f6;
 		cursor: pointer;
 		transition: 0.2s;
+		font-family: 'Barlow', sans-serif;
 	}
 
 	button:hover {
