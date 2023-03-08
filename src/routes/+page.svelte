@@ -3,6 +3,8 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import Futures from '$lib/components/Futures.svelte';
 	import Presentation from '$lib/components/Presentation.svelte';
+	import Recommendations from '$lib/components/Recommendations.svelte';
+	import Contact from '$lib/components/Contact.svelte';
 </script>
 
 <div class="hero-container">
@@ -14,6 +16,13 @@
 	</section>
 	<section id="presentationId">
 		<Presentation />
+	</section>
+	<section class="not-full">
+		<Recommendations />
+	</section>
+
+	<section class="not-full">
+		<Contact />
 	</section>
 </main>
 
